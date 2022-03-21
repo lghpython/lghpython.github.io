@@ -1,6 +1,6 @@
 ---
-title: window10 子系统 centos8安装 systemd命令安装
-published:true
+title: "window10 子系统 centos8安装 systemd命令安装"
+published: true
 ---
 
 ## 一、安装子系统
