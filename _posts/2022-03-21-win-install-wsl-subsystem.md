@@ -27,7 +27,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 # 结束后最好重启系统， 
 ```
 或者点击 `开始` 直接搜索`开启或关闭windows功能` 做如下勾选
-![启动虚拟机.png](../png/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8A%9F%E8%83%BD%E5%90%AF%E5%8A%A8.png)
+![启动虚拟机.png](png/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8A%9F%E8%83%BD%E5%90%AF%E5%8A%A8.png)
 
 
 
@@ -56,7 +56,7 @@ scoop install lxrunoffline
 ```
 ### 5. lxrunoffline 安装子系统（当然也可以到微软商店直接安装Ubuntu）
 **下载子系统： [centos](https://github.com/CentOS/sig-cloud-instance-images/tree/CentOS-8-x86_64/docker)**
-![centos下载.png](../png/centos8.png)
+![centos下载.png](png/centos8.png)
 ```
 # LxRunOffline install -n <子系统名称> -d <安装路径> -f <安装包>.tar.gz
 LxRunOffline install -n centos-d D:/wsl/centos -f d:/wsl/backup/centos-8-x86_64.tar.xz
