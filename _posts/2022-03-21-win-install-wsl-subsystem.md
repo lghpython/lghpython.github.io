@@ -27,8 +27,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 # 结束后最好重启系统， 
 ```
 或者点击 `开始` 直接搜索`开启或关闭windows功能` 做如下勾选
-![启动虚拟机.png](png/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8A%9F%E8%83%BD%E5%90%AF%E5%8A%A8.png)
-
+![启动虚拟机.png](https://img2022.cnblogs.com/blog/2046661/202203/2046661-20220314105636272-719295786.png)
 
 
 
@@ -37,7 +36,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 > 备注：  ARM64 计算机，请下载 [ARM64 包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)
 > 必须在cmd中查询类型：systeminfo | find "系统类型"
-![查询系统类型.png](https://upload-images.jianshu.io/upload_images/20179910-03de00a0b424ebb8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![查询系统类型](https://img2022.cnblogs.com/blog/2046661/202203/2046661-20220314121741456-1959937416.png)
 
 ### 3. 将 wsl2 设置为默认版本
 
@@ -56,7 +55,7 @@ scoop install lxrunoffline
 ```
 ### 5. lxrunoffline 安装子系统（当然也可以到微软商店直接安装Ubuntu）
 **下载子系统： [centos](https://github.com/CentOS/sig-cloud-instance-images/tree/CentOS-8-x86_64/docker)**
-![centos下载.png](png/centos8.png)
+![centos下载.png](https://img2022.cnblogs.com/blog/2046661/202203/2046661-20220314111159779-1563071990.png)
 ```
 # LxRunOffline install -n <子系统名称> -d <安装路径> -f <安装包>.tar.gz
 LxRunOffline install -n centos-d D:/wsl/centos -f d:/wsl/backup/centos-8-x86_64.tar.xz
