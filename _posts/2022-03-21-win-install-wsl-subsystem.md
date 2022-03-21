@@ -46,6 +46,7 @@ scoop install lxrunoffline
 LxRunOffline install -n centos-d D:/wsl/centos -f d:/wsl/backup/centos-8-x86_64.tar.xz
 ```
 > 如果有安装 Windows Terminal 的话，下拉菜单会自动显示，不做过多描述
+
 ### 6.其他命令
 ```shell
 # 查看安装的子系统
