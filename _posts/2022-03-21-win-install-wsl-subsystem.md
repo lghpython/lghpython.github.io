@@ -2,8 +2,14 @@
 title: "window10 子系统 centos8安装 systemd命令安装"
 published: true
 ---
+- [安装子系统](#安装子系统)
+- [更新源](#更新源)
+- [其他命令](#其他命令)
+- [解决-wsl-无法使用systemctl-问题](#解决-wsl-无法使用systemctl-问题)
 
-## 一、安装子系统
+----
+
+## 安装子系统
 ### 1. 启动虚拟机功能
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -46,7 +52,7 @@ scoop install lxrunoffline
 LxRunOffline install -n centos-d D:/wsl/centos -f d:/wsl/backup/centos-8-x86_64.tar.xz
 ```
 > 如果有安装 Windows Terminal 的话，下拉菜单会自动显示，不做过多描述
-
+----
 ### 6.其他命令
 ```shell
 # 查看安装的子系统
@@ -67,7 +73,7 @@ LxRunOffline e -n centos -f d:/wsl/backup/centos_backup.tar.gz
 LxRunOffline i -n centos -d D:/wsl/centos -f d:/wsl/backup -f d:/wsl/backup/centos-8-x86_64.tar.xz
 ```
 
-## 二、更新源
+## 更新源
 ### 1. 方法一
 ```shell
 # 备份源
@@ -98,7 +104,7 @@ yum makecache     # 生成yum缓存
 2. 阿里云镜像地址
 `baseurl=https://mirrors.aliyun.com/centos-vault//$contentdir/$releasever/AppStream/$basearch/os/`
 
-## 三、其他命令
+## 其他命令
 ```shell
 yum -y install sudo
 yum -y install wget vim
@@ -120,7 +126,7 @@ dnf -y install initscripts # 启用 service 命令
 # 子系统访问window文件
 ls /mnt
 ```
-## 四、解决 wsl 无法使用systemctl 问题
+## 解决 wsl 无法使用systemctl 问题
 参考：hosinokoe's blog [博客repair-systemctl-in-CentOS8-on-WSL2](https://www.qiuzhi12.com/2021/10/25/repair-systemctl-in-CentOS8-on-WSL2/#/%E4%BF%AE%E5%A4%8Dsystemd)
 ### 1. 方法一： 安装genie
 ```shell
