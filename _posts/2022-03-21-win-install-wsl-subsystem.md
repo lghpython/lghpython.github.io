@@ -3,9 +3,19 @@ title: "window10 子系统 centos8安装 systemd命令安装"
 published: true
 ---
 - [安装子系统](#安装子系统)
+  - [1. 启动虚拟机功能](#1-启动虚拟机功能)
+  - [2. 下载 Linux 内核更新包](#2-下载-linux-内核更新包)
+  - [3. 将 wsl2 设置为默认版本](#3-将-wsl2-设置为默认版本)
+  - [4.安装scoop、lxrunoffline](#4安装scooplxrunoffline)
+  - [5. lxrunoffline 安装子系统（当然也可以到微软商店直接安装Ubuntu）](#5-lxrunoffline-安装子系统当然也可以到微软商店直接安装ubuntu)
+  - [6.其他命令](#6其他命令)
 - [更新源](#更新源)
+  - [1. 方法一](#1-方法一)
+  - [2. 方法二：手动更改三个文件](#2-方法二手动更改三个文件)
 - [其他命令](#其他命令)
-- [解决-wsl-无法使用systemctl-问题](#解决-wsl-无法使用systemctl-问题)
+- [解决 wsl 无法使用systemctl 问题](#解决-wsl-无法使用systemctl-问题)
+  - [1. 方法一： 安装genie](#1-方法一-安装genie)
+  - [2. 方法二(没试过)](#2-方法二没试过)
 
 ----
 
@@ -52,7 +62,9 @@ scoop install lxrunoffline
 LxRunOffline install -n centos-d D:/wsl/centos -f d:/wsl/backup/centos-8-x86_64.tar.xz
 ```
 > 如果有安装 Windows Terminal 的话，下拉菜单会自动显示，不做过多描述
+
 ----
+
 ### 6.其他命令
 ```shell
 # 查看安装的子系统
